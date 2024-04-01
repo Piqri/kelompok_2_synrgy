@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CH2_CH3</string>
+    <string name="hint_edtcost_text">Cost of Service</string>
+    <string name="desc_text">How was the service?</string>
+    <string name="amazing_text">Amazing (20%)</string>
+    <string name="good_text">Good (18%)</string>
+    <string name="ok_text">Ok (15%)</string>
+    <string name="ask_text">Round up tip?</string>
+    <string name="btn_calculate_text">Calculate</string>
+    <string name="tip_amount_text">Tip amount</string>
+    <string name="btn_send_tip_text">Send Tip</string>
 </resources>

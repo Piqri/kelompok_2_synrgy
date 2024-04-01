@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CH2_CH3</string>
+    <string name="hint_edtcost_text">Biaya Pelayanan</string>
+    <string name="desc_text">Bagaimana pelayanan nya?</string>
+    <string name="amazing_text">Menakjubkan (20%)</string>
+    <string name="good_text">Bagus (18%)</string>
+    <string name="ok_text">Ok (15%)</string>
+    <string name="ask_text">Ingin Memberi Tip?</string>
+    <string name="btn_calculate_text">Kalkulasikan</string>
+    <string name="tip_amount_text">Total Tip</string>
+    <string name="btn_send_tip_text">Mengirim Tip</string>
+</resources>
