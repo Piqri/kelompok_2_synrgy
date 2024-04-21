@@ -9,4 +9,6 @@
     <string name="btn_calculate_text">Calculate</string>
     <string name="tip_amount_text">Tip amount</string>
     <string name="btn_send_tip_text">Send Tip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

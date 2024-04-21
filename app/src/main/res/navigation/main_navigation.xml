@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragment1Nav">
+    <fragment
+        android:id="@+id/fragment1Nav"
+        android:name="com.jer.ch2_ch3.ch3.Fragment1Nav"
+        android:label="fragment_fragment1_nav"
+        tools:layout="@layout/fragment_fragment1_nav" >
+        <action
+            android:id="@+id/action_fragment1Nav_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.jer.ch2_ch3.ch3.Fragment2"
+        android:label="fragment_2"
+        tools:layout="@layout/fragment_2" >
+        <argument
+            android:name="someText"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Input Your Name" />
+    </fragment>
+</navigation>
