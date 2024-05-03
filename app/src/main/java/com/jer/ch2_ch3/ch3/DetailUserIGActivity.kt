@@ -12,6 +12,7 @@ import com.jer.ch2_ch3.databinding.ActivityDetailUserIgactivityBinding
 class DetailUserIGActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailUserIgactivityBinding
+    private val viewModel: JustViewModel = JustViewModel()
 //    private lateinit var musician :  Musician
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +22,8 @@ class DetailUserIGActivity : AppCompatActivity() {
         val username = Intent()
         username.getStringExtra("username")
 
-//        val allmusician = AllMusician()
+
+    //        val allmusician = AllMusician()
 //        musician.username = allmusician.toString()
 //        musician.photoProfil = allmusician.toString()
 
@@ -36,7 +38,7 @@ class DetailUserIGActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_VIEW)
         intent.data = Uri.parse(url)
         startActivity(intent)
-//            Intent toBrowser = new Intent.ACTION_VIEW, Uri.parse()
+
     }
 
     binding.btnMoveToNav.setOnClickListener {
@@ -48,28 +50,11 @@ class DetailUserIGActivity : AppCompatActivity() {
 //            val moveToFrag = Intent(this@DetailUserIGActivity, UserFragment::class.java)
 //            startActivity(moveToFrag)
             val fragmentManager = supportFragmentManager
-            val instFragmentDetailUser = UserFragment()
-            val fragment = fragmentManager.findFragmentByTag(UserFragment::class.java.simpleName)
+            viewModel.funcToFragment(fragmentManager)
 
-            if (fragment !is UserFragment) {
-                Log.d("MyFlexibleFragment", "Fragment name: " + UserFragment::class.java.simpleName)
 
-                fragmentManager
-                    .beginTransaction()
-                    .replace(
-                        R.id.frame_container_ig,
-                        instFragmentDetailUser,
-                        UserFragment::class.java.simpleName
-                    )
-                    .addToBackStack(null)
-                    .commit()
         }
 
-
-
-
-
     }
 
-    }
 }
