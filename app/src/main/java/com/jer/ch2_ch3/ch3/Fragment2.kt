@@ -42,6 +42,7 @@ class Fragment2 : Fragment() {
 //        val tvResultNav: TextView = view.findViewById(R.id.tv_result_from_nav)
 
         val name = Fragment2Args.fromBundle(arguments as Bundle).someText
+//        val name = Fragment2Args.fromBundle(requireArguments())
 
         binding.tvResultFromNav.text = name
     }

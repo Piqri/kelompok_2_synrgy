@@ -33,6 +33,18 @@ fun AllMusician(): List<Musician>{
             "Ardhito",
             "https://cdn.antaranews.com/cache/1200x800/2020/10/18/Screenshot_20201017-073952_Gmail-01.jpg"
         ),
+        Musician(
+            "Pramono",
+            "https://cdn.antaranews.com/cache/1200x800/2020/10/18/Screenshot_20201017-073952_Gmail-01.jpg"
+        ),
+        Musician(
+            "Adik Ardhito",
+            "https://cdn.antaranews.com/cache/1200x800/2020/10/18/Screenshot_20201017-073952_Gmail-01.jpg"
+        ),
+        Musician(
+            "Sepupu Ardhito",
+            "https://cdn.antaranews.com/cache/1200x800/2020/10/18/Screenshot_20201017-073952_Gmail-01.jpg"
+        ),
     )
     return musician
 

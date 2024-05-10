@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.jer.ch2_ch3.R
 import com.jer.ch2_ch3.databinding.FragmentFragment1NavBinding
 
@@ -43,10 +44,14 @@ class Fragment1Nav : Fragment() {
                 val toFragment2 = Fragment1NavDirections.actionFragment1NavToFragment2()
                 toFragment2.someText = binding.edtToNav.text.toString()
                 it.findNavController().navigate(toFragment2)
+
+
+//                val bundle = Bundle()
+//                bundle.putString(EXTRA_NAME, "first text")
+//                bundle.putString("text_from_edit", binding.edtToNav.text.toString())
+//                it.findNavController().navigate(R.id.action_fragment1Nav_to_fragment2)
+
             }
-//            val bundle = Bundle()
-//            bundle.putString(EXTRA_NAME, "first text")
-//            it.findNavController().navigate(R.id.action_fragment1Nav_to_fragment2)
         }
 
         super.onViewCreated(view, savedInstanceState)

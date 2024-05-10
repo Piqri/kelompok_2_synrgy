@@ -19,8 +19,8 @@ class DetailUserIGActivity : AppCompatActivity() {
         binding = ActivityDetailUserIgactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val username = Intent()
-        username.getStringExtra("username")
+//        val username = Intent()
+//        username.getStringExtra("username")
 
 
     //        val allmusician = AllMusician()
@@ -49,8 +49,8 @@ class DetailUserIGActivity : AppCompatActivity() {
         binding.btnToFrag.setOnClickListener {
 //            val moveToFrag = Intent(this@DetailUserIGActivity, UserFragment::class.java)
 //            startActivity(moveToFrag)
-            val fragmentManager = supportFragmentManager
-            viewModel.funcToFragment(fragmentManager)
+//            val fragmentManager = supportFragmentManager
+//            viewModel.funcToFragment(fragmentManager)
 
 
         }
