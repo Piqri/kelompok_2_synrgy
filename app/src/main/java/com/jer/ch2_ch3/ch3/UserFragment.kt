@@ -46,42 +46,17 @@ class UserFragment : Fragment() {
                 commit()
             }
 
-
-
             val bundle = Bundle()
             bundle.putString("text_from_edit", edtUser.text.toString())
             fragment2.arguments = bundle
 
 
-
-//            val resultIntent = Intent()
-//
-//            resultIntent.putExtra("edit_result", edtUser.toString())
-//            setRes
-//            setResult(resultIntent)
-//            finish()
         }
-
-
-
-//        val pictureDetail: ImageView = view.findViewById(R.id.iv_user_detail)
-//        val usernameDetail: TextView = view.findViewById(R.id.tv_username)
-//        val btnIg: Button = view.findViewById(R.id.btn_ig)
-//        var pictureToString = pictureDetail.toString()
-
-//        val allMusician = AllMusician()
-//        getDetailPageContent(allMusician)
-
 
 
         super.onViewCreated(view, savedInstanceState)
 
     }
-
-//    fun getDetailPageContent (user: List<Musician>) {
-//        pictureToString = user.photoProfil
-//        usernameDetail.text = user.username
-//    }
 
 
 }

@@ -38,7 +38,7 @@ class InstagramActivity : AppCompatActivity() {
         val fragment = fragmentManager.findFragmentByTag(DetailFragment::class.java.simpleName)
 
         if (fragment !is DetailFragment) {
-            Log.d("MyFlexibleFragment", "Fragment name: " + DetailFragment::class.java.simpleName)
+            Log.d("CH2_CH3", "Fragment name: " + DetailFragment::class.java.simpleName)
 
             fragmentManager
                 .beginTransaction()
